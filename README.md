@@ -26,12 +26,15 @@ A modern, responsive, and accessible portfolio website built for the Coursera Pr
 
 ## 💼 Featured Projects Included
 1. **MindTwin AI — Personal Digital Twin & Mood Prediction Platform**
+   - *GitHub Repo:* [github.com/singhalujjwal9528-ops/MindTwin--AI](https://github.com/singhalujjwal9528-ops/MindTwin--AI)
    - *Tech:* React 19, TypeScript, Scikit-learn (HistGradientBoostingRegressor), Express 5, MongoDB, Docker
    - *Highlights:* Correlates biometric indicators (sleep, heart rate, screen latency) with sub-100 ms predictive ML inference.
 2. **Receipt Vault — Asynchronous Receipt Digitization & Warranty Tracker**
+   - *GitHub Repo:* [github.com/singhalujjwal9528-ops/Receipt-vault](https://github.com/singhalujjwal9528-ops/Receipt-vault)
    - *Tech:* React, BullMQ, Redis, Gemini 1.5 Flash Vision, PostgreSQL, Prisma
    - *Highlights:* Event-driven queue architecture returning HTTP 202 Accepted in under 150 ms with Server-Sent Events (SSE).
 3. **Interactive & Accessible Developer Portfolio**
+   - *GitHub Profile:* [github.com/singhalujjwal9528-ops](https://github.com/singhalujjwal9528-ops)
    - *Tech:* HTML5, CSS3 (Custom Properties), JavaScript (ES6+), WCAG Accessibility
 
 ---

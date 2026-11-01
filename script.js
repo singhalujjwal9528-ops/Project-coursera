@@ -5,7 +5,7 @@
  *  2. Mobile Navigation Drawer Toggle & Accessibility Handling
  *  3. Interactive Project Category Filtering
  *  4. Accessible Form Validation & Interactive Feedback Toast
- *  5. Active Link Highlighting on Scroll
+ *  5. Active Link Highlighting on Scroll (Scroll Spy)
  *  6. Dynamic Copyright Year
  */
 
@@ -211,4 +211,3 @@ document.addEventListener('DOMContentLoaded', () => {
     yearElement.textContent = new Date().getFullYear();
   }
 });
-

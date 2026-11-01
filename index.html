@@ -67,15 +67,72 @@
             <a href="#contact" class="btn btn-secondary">Let's Connect</a>
           </div>
         </div>
+        
+        <!-- Hero Avatar Frame with Self-Contained SVG Developer Illustration -->
         <div class="hero-image-wrapper">
-          <div class="hero-avatar-frame">
-            <!-- Profile avatar with accessible alt description -->
-            <img 
-              src="https://images.unsplash.com/photo-1534972195531-a756b1126f24?auto=format&fit=crop&w=600&q=80" 
-              alt="Portrait of Ujjwal Singhal, full-stack software developer and computer science student" 
-              class="hero-img"
-              loading="lazy"
-            >
+          <div class="hero-avatar-frame" role="img" aria-label="Illustrated portrait of Ujjwal Singhal coding at a modern workstation">
+            <svg class="hero-svg-avatar" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ea580c"/>
+                  <stop offset="100%" stop-color="#fb923c"/>
+                </linearGradient>
+                <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#ffd8b3"/>
+                  <stop offset="100%" stop-color="#fbc088"/>
+                </linearGradient>
+                <linearGradient id="hoodieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#1e293b"/>
+                  <stop offset="100%" stop-color="#0f172a"/>
+                </linearGradient>
+                <linearGradient id="laptopGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#f8fafc"/>
+                  <stop offset="100%" stop-color="#cbd5e1"/>
+                </linearGradient>
+                <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#0f172a"/>
+                  <stop offset="100%" stop-color="#1e1b4b"/>
+                </linearGradient>
+              </defs>
+
+              <rect width="320" height="320" fill="url(#bgGrad)"/>
+              
+              <text x="35" y="65" font-family="'Fira Code', monospace" font-size="20" font-weight="700" fill="rgba(255,255,255,0.3)">&lt;/&gt;</text>
+              <text x="250" y="80" font-family="'Fira Code', monospace" font-size="22" font-weight="700" fill="rgba(255,255,255,0.3)">{ ; }</text>
+              <text x="40" y="240" font-family="'Fira Code', monospace" font-size="16" font-weight="600" fill="rgba(255,255,255,0.25)">0101</text>
+              <text x="245" y="225" font-family="'Fira Code', monospace" font-size="16" font-weight="600" fill="rgba(255,255,255,0.25)">AI/ML</text>
+
+              <path d="M90 320 C90 250, 115 220, 160 220 C205 220, 230 250, 230 320 Z" fill="url(#hoodieGrad)"/>
+              <path d="M142 225 L160 260 L178 225 Z" fill="#ea580c"/>
+              <rect x="144" y="180" width="32" height="30" rx="6" fill="url(#skinGrad)"/>
+              <ellipse cx="160" cy="145" rx="42" ry="50" fill="url(#skinGrad)"/>
+
+              <path d="M118 135 C115 100, 135 75, 160 75 C185 75, 205 100, 202 135 C195 120, 185 105, 160 105 C135 105, 125 120, 118 135 Z" fill="#1c1917"/>
+              <path d="M120 120 C130 90, 190 90, 200 120 C185 100, 135 100, 120 120 Z" fill="#292524"/>
+
+              <rect x="128" y="132" width="26" height="18" rx="5" fill="none" stroke="#ea580c" stroke-width="3"/>
+              <rect x="166" y="132" width="26" height="18" rx="5" fill="none" stroke="#ea580c" stroke-width="3"/>
+              <line x1="154" y1="140" x2="166" y2="140" stroke="#ea580c" stroke-width="3"/>
+
+              <circle cx="141" cy="141" r="3" fill="#1c1917"/>
+              <circle cx="179" cy="141" r="3" fill="#1c1917"/>
+              <path d="M130 127 Q141 123 152 127" stroke="#1c1917" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <path d="M168 127 Q179 123 190 127" stroke="#1c1917" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+              <path d="M148 165 Q160 174 172 165" stroke="#c2410c" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+              <path d="M85 305 L235 305 L225 320 L95 320 Z" fill="url(#laptopGrad)"/>
+              <rect x="100" y="235" width="120" height="70" rx="6" fill="url(#screenGrad)" stroke="#cbd5e1" stroke-width="2"/>
+              
+              <rect x="110" y="248" width="45" height="4" rx="2" fill="#f97316"/>
+              <rect x="160" y="248" width="30" height="4" rx="2" fill="#38bdf8"/>
+              <rect x="110" y="258" width="75" height="4" rx="2" fill="#4ade80"/>
+              <rect x="110" y="268" width="55" height="4" rx="2" fill="#fbbf24"/>
+              <rect x="110" y="278" width="85" height="4" rx="2" fill="#f43f5e"/>
+              <rect x="110" y="288" width="40" height="4" rx="2" fill="#a78bfa"/>
+
+              <circle cx="160" cy="270" r="4" fill="rgba(255,255,255,0.85)"/>
+            </svg>
           </div>
         </div>
       </div>
@@ -119,7 +176,6 @@
             </div>
           </div>
 
-          <!-- Personal touch showing user's hobbies -->
           <div class="personal-bio-box">
             <div class="personal-bio-icon" aria-hidden="true">🎭</div>
             <div class="personal-bio-text">
@@ -256,12 +312,16 @@
           <!-- Project 1: MindTwin AI -->
           <article class="project-card" data-category="ml">
             <div class="project-image-wrapper">
-              <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80" 
-                alt="MindTwin AI biometric data visualization dashboard showing sleep patterns, heart rate, and circadian rhythm trends" 
-                class="project-img"
-                loading="lazy"
-              >
+              <svg class="project-svg-banner" viewBox="0 0 700 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="700" height="240" fill="#1e1b4b"/>
+                <path d="M0 130 C100 60, 200 200, 350 110 C500 20, 600 160, 700 120" stroke="#f97316" stroke-width="4" fill="none"/>
+                <path d="M0 150 C120 90, 220 180, 360 140 C520 60, 580 180, 700 140" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="6 6" fill="none"/>
+                <circle cx="350" cy="110" r="8" fill="#ea580c" stroke="#ffffff" stroke-width="3"/>
+                <circle cx="200" cy="200" r="6" fill="#38bdf8"/>
+                <circle cx="500" cy="20" r="6" fill="#4ade80"/>
+                <text x="30" y="50" font-family="'Inter', sans-serif" font-size="20" font-weight="800" fill="#ffffff">🧠 MindTwin AI</text>
+                <text x="30" y="80" font-family="'Fira Code', monospace" font-size="13" font-weight="500" fill="#fed7aa">HistGradientBoostingRegressor &bull; Sub-100ms Inference</text>
+              </svg>
             </div>
             <div class="project-content">
               <div class="project-tags">
@@ -277,9 +337,13 @@
                 Architected and deployed a full-stack personal digital twin that correlates sleep patterns, resting heart rate, screen latency, and mood ratings to forecast circadian insights. Features an asynchronous ML pipeline using Scikit-learn's <code>HistGradientBoostingRegressor</code> with sub-100 ms responses and a React/TypeScript analytics dashboard.
               </p>
               <div class="project-links">
-                <a href="https://github.com/singhalujjwal9528" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="MindTwin AI GitHub Repository">GitHub &rarr;</a>
-                <a href="#projects" class="project-link secondary" aria-label="MindTwin AI Live Demo">Live Demo</a>
-                <a href="#projects" class="project-link secondary" aria-label="MindTwin AI API Health">API Health</a>
+                <!-- Direct GitHub Repository Option -->
+                <a href="https://github.com/singhalujjwal9528-ops/MindTwin--AI" target="_blank" rel="noopener noreferrer" class="btn-repo-link" aria-label="Open MindTwin AI GitHub Repository">
+                  <svg class="repo-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>View Repository &rarr;</span>
+                </a>
               </div>
             </div>
           </article>
@@ -287,12 +351,19 @@
           <!-- Project 2: Receipt Vault -->
           <article class="project-card" data-category="fullstack">
             <div class="project-image-wrapper">
-              <img 
-                src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=700&q=80" 
-                alt="Receipt Vault interface displaying automated receipt digitization, expense summaries, and warranty tracker" 
-                class="project-img"
-                loading="lazy"
-              >
+              <svg class="project-svg-banner" viewBox="0 0 700 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="700" height="240" fill="#0f172a"/>
+                <rect x="50" y="110" width="130" height="50" rx="8" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+                <text x="80" y="140" font-family="'Fira Code', monospace" font-size="14" font-weight="700" fill="#fed7aa">QUEUED</text>
+                <path d="M190 135 L260 135" stroke="#f97316" stroke-width="3" stroke-dasharray="4 4"/>
+                <rect x="270" y="110" width="150" height="50" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+                <text x="295" y="140" font-family="'Fira Code', monospace" font-size="14" font-weight="700" fill="#7dd3fc">PROCESSING</text>
+                <path d="M430 135 L500 135" stroke="#38bdf8" stroke-width="3" stroke-dasharray="4 4"/>
+                <rect x="510" y="110" width="140" height="50" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
+                <text x="535" y="140" font-family="'Fira Code', monospace" font-size="14" font-weight="700" fill="#86efac">COMPLETED</text>
+                <text x="30" y="50" font-family="'Inter', sans-serif" font-size="20" font-weight="800" fill="#ffffff">🧾 Receipt Vault</text>
+                <text x="30" y="80" font-family="'Fira Code', monospace" font-size="13" font-weight="500" fill="#fed7aa">Redis + BullMQ &bull; Gemini 1.5 Flash Vision &bull; SSE Streams</text>
+              </svg>
             </div>
             <div class="project-content">
               <div class="project-tags">
@@ -308,9 +379,13 @@
                 Event-driven receipt processing system using Redis and BullMQ worker queues to run OCR asynchronously, returning HTTP 202 in under 150 ms. Implemented Server-Sent Events (SSE) for real-time state streaming and Google Gemini 1.5 Flash Vision to extract merchant, total, and warranty details into PostgreSQL and Prisma.
               </p>
               <div class="project-links">
-                <a href="https://github.com/singhalujjwal9528" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Receipt Vault GitHub Repository">GitHub &rarr;</a>
-                <a href="#projects" class="project-link secondary" aria-label="Receipt Vault Live Demo">Live Demo</a>
-                <a href="#projects" class="project-link secondary" aria-label="Receipt Vault Queue Dashboard">Queue Dashboard</a>
+                <!-- Direct GitHub Repository Option -->
+                <a href="https://github.com/singhalujjwal9528-ops/Receipt-vault" target="_blank" rel="noopener noreferrer" class="btn-repo-link" aria-label="Open Receipt Vault GitHub Repository">
+                  <svg class="repo-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>View Repository &rarr;</span>
+                </a>
               </div>
             </div>
           </article>
@@ -318,12 +393,17 @@
           <!-- Project 3: Responsive Portfolio Platform -->
           <article class="project-card" data-category="fullstack">
             <div class="project-image-wrapper">
-              <img 
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80" 
-                alt="Interactive developer portfolio website showcasing custom orange and white theme, accessible form, and project filter" 
-                class="project-img"
-                loading="lazy"
-              >
+              <svg class="project-svg-banner" viewBox="0 0 700 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="700" height="240" fill="#2b1810"/>
+                <rect x="60" y="80" width="580" height="130" rx="10" fill="#ffffff" stroke="#fed7aa" stroke-width="2"/>
+                <circle cx="85" cy="100" r="5" fill="#ef4444"/>
+                <circle cx="102" cy="100" r="5" fill="#f59e0b"/>
+                <circle cx="119" cy="100" r="5" fill="#10b981"/>
+                <rect x="145" y="93" width="220" height="14" rx="4" fill="#ffedd5"/>
+                <text x="155" y="104" font-family="'Fira Code', monospace" font-size="10" fill="#ea580c">https://github.com/singhalujjwal9528-ops</text>
+                <text x="30" y="50" font-family="'Inter', sans-serif" font-size="20" font-weight="800" fill="#ffffff">🌐 Interactive Developer Portfolio</text>
+                <text x="30" y="75" font-family="'Fira Code', monospace" font-size="13" font-weight="500" fill="#fed7aa">Semantic HTML5 &bull; CSS Custom Properties &bull; Zero Warnings</text>
+              </svg>
             </div>
             <div class="project-content">
               <div class="project-tags">
@@ -338,8 +418,13 @@
                 A custom-built portfolio showcasing clean semantics, responsive CSS Grid layouts, and vanilla JavaScript interactivity. Includes a persistent dark/light theme switcher with custom orange accents, interactive category filters, and an accessible contact form with instant validation feedback.
               </p>
               <div class="project-links">
-                <a href="#home" class="project-link" aria-label="View Portfolio Live">Live Preview &rarr;</a>
-                <a href="https://github.com/singhalujjwal9528" target="_blank" rel="noopener noreferrer" class="project-link secondary" aria-label="Portfolio Source Code">Source Code</a>
+                <!-- Direct GitHub Repository Option -->
+                <a href="https://github.com/singhalujjwal9528-ops" target="_blank" rel="noopener noreferrer" class="btn-repo-link" aria-label="Open GitHub Profile">
+                  <svg class="repo-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>View GitHub Profile &rarr;</span>
+                </a>
               </div>
             </div>
           </article>
@@ -422,10 +507,10 @@
               </div>
 
               <div class="contact-item">
-                <span class="contact-icon" aria-hidden="true">📍</span>
+                <span class="contact-icon" aria-hidden="true">🐙</span>
                 <div>
-                  <strong>Hometown</strong>
-                  <p>Meerut, Uttar Pradesh, India</p>
+                  <strong>GitHub</strong>
+                  <p><a href="https://github.com/singhalujjwal9528-ops" target="_blank" rel="noopener noreferrer">github.com/singhalujjwal9528-ops</a></p>
                 </div>
               </div>
             </div>
