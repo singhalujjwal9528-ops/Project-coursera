@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Ujjwal Singhal - B.Tech CSE | Full-Stack Developer & Machine Learning Enthusiast">
+  <title>Ujjwal Singhal | Full-Stack &amp; ML Developer Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main Navigation">
+      <a href="#home" class="nav-logo" aria-label="Home page">
+        <span class="logo-bracket">&lt;</span>Ujjwal Singhal<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="nav-close" id="nav-close" aria-label="Close menu">&times;</button>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button with Accessibility Label -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light theme" title="Toggle theme">
+          <span class="theme-icon sun-icon" aria-hidden="true">☀️</span>
+          <span class="theme-icon moon-icon" aria-hidden="true">🌙</span>
+        </button>
+
+        <!-- Mobile Navigation Toggle -->
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero section" id="home" aria-label="Introduction">
+      <div class="hero-container container">
+        <div class="hero-content">
+          <span class="hero-greeting">👋 Hi there! Welcome to my space</span>
+          <h1 class="hero-title">I'm <span class="highlight-name">Ujjwal Singhal</span></h1>
+          <h2 class="hero-subtitle">B.Tech CSE (Core) &bull; Full-Stack &bull; Machine Learning</h2>
+          <p class="hero-description">
+            Computer Science student at <strong>Manipal University Jaipur</strong> (CGPA: <strong>9.49</strong>). I love engineering full-stack web applications, architecting asynchronous queue pipelines, and crafting machine learning models that solve practical problems.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Check Out My Projects &rarr;</a>
+            <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="hero-avatar-frame">
+            <!-- Profile avatar with accessible alt description -->
+            <img 
+              src="https://images.unsplash.com/photo-1534972195531-a756b1126f24?auto=format&fit=crop&w=600&q=80" 
+              alt="Portrait of Ujjwal Singhal, full-stack software developer and computer science student" 
+              class="hero-img"
+              loading="lazy"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about" aria-label="About Me">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">My journey, engineering mindset, and personal interests</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3 class="about-card-title"><span>🎓</span> Education &amp; Background</h3>
+            <p>
+              I am currently pursuing my <strong>B.Tech in Computer Science &amp; Engineering (Core)</strong> at <strong>Manipal University Jaipur</strong>, maintaining a current <strong>CGPA of 9.49</strong>. I completed my schooling from Guru Tegh Bahadur Public School, Meerut (Class XII: 90.8%, Class X: 95.8%).
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3 class="about-card-title"><span>⚡</span> What Drives Me</h3>
+            <p>
+              I thrive on building scalable end-to-end applications — from intuitive frontend interfaces (React 19, TypeScript, Tailwind) to event-driven distributed backends (Node.js, Redis, BullMQ, PostgreSQL) and Scikit-learn predictive ML engines.
+            </p>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-number">9.49</span>
+              <span class="highlight-label">Current B.Tech CGPA</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-number">&lt; 100ms</span>
+              <span class="highlight-label">Asynchronous ML Latency</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-number">Event-Driven</span>
+              <span class="highlight-label">Queues, SSE &amp; Redis</span>
+            </div>
+          </div>
+
+          <!-- Personal touch showing user's hobbies -->
+          <div class="personal-bio-box">
+            <div class="personal-bio-icon" aria-hidden="true">🎭</div>
+            <div class="personal-bio-text">
+              <strong>Beyond Code:</strong> When I'm not writing code or debugging distributed queues, you'll find me participating in university ideathons, singing, or dancing! I believe staying creative outside technology makes me a sharper problem solver.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills" aria-label="Skills & Technologies">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Technologies and toolsets I've worked with across my projects</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon" aria-hidden="true">💻</span>
+              <h3 class="category-title">Programming Languages</h3>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-pill">C++</li>
+              <li class="skill-pill">Python</li>
+              <li class="skill-pill">JavaScript (ES6+)</li>
+              <li class="skill-pill">TypeScript</li>
+              <li class="skill-pill">HTML5 &amp; CSS3</li>
+            </ul>
+          </div>
+
+          <!-- Frontend Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon" aria-hidden="true">🎨</span>
+              <h3 class="category-title">Frontend Development</h3>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-pill">React 19 / Vite</li>
+              <li class="skill-pill">TypeScript</li>
+              <li class="skill-pill">Tailwind CSS</li>
+              <li class="skill-pill">Recharts</li>
+              <li class="skill-pill">Responsive Design</li>
+              <li class="skill-pill">Web Accessibility (a11y)</li>
+            </ul>
+          </div>
+
+          <!-- Backend & Architecture -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon" aria-hidden="true">⚙️</span>
+              <h3 class="category-title">Backend &amp; Distributed Systems</h3>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-pill">Node.js</li>
+              <li class="skill-pill">Express.js (Express 5)</li>
+              <li class="skill-pill">REST APIs</li>
+              <li class="skill-pill">JWT Authentication</li>
+              <li class="skill-pill">Server-Sent Events (SSE)</li>
+              <li class="skill-pill">BullMQ &amp; Worker Queues</li>
+            </ul>
+          </div>
+
+          <!-- Databases & DevOps -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon" aria-hidden="true">🗄️</span>
+              <h3 class="category-title">Databases &amp; DevOps</h3>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-pill">PostgreSQL</li>
+              <li class="skill-pill">Prisma ORM</li>
+              <li class="skill-pill">MongoDB Atlas</li>
+              <li class="skill-pill">Redis (In-Memory Cache)</li>
+              <li class="skill-pill">Docker</li>
+              <li class="skill-pill">Git &amp; GitHub</li>
+              <li class="skill-pill">Railway &amp; Vercel</li>
+            </ul>
+          </div>
+
+          <!-- Machine Learning & AI -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon" aria-hidden="true">🧠</span>
+              <h3 class="category-title">Machine Learning &amp; AI</h3>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-pill">Scikit-learn</li>
+              <li class="skill-pill">HistGradientBoostingRegressor</li>
+              <li class="skill-pill">Predictive Analytics</li>
+              <li class="skill-pill">Regression Models</li>
+              <li class="skill-pill">Gemini 1.5 Flash Vision API</li>
+            </ul>
+          </div>
+
+          <!-- Core Concepts & Soft Skills -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon" aria-hidden="true">📐</span>
+              <h3 class="category-title">Core Concepts &amp; Professional</h3>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-pill">Operating System Fundamentals</li>
+              <li class="skill-pill">Software Development Life Cycle (SDLC)</li>
+              <li class="skill-pill">Asynchronous Architecture</li>
+              <li class="skill-pill">System Design</li>
+              <li class="skill-pill">Communication Skills</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects" aria-label="Featured Projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world production platforms and applications I've built</p>
+        </div>
+
+        <!-- Interactive Filter Controls -->
+        <div class="project-filters" role="tablist" aria-label="Project categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+          <button class="filter-btn" data-filter="ml" role="tab" aria-selected="false">Machine Learning &amp; AI</button>
+          <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full-Stack &amp; Systems</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1: MindTwin AI -->
+          <article class="project-card" data-category="ml">
+            <div class="project-image-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80" 
+                alt="MindTwin AI biometric data visualization dashboard showing sleep patterns, heart rate, and circadian rhythm trends" 
+                class="project-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">React 19</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Express 5</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Docker</span>
+              </div>
+              <h3 class="project-title">MindTwin AI — Personal Digital Twin &amp; Mood Prediction Platform</h3>
+              <p class="project-description">
+                Architected and deployed a full-stack personal digital twin that correlates sleep patterns, resting heart rate, screen latency, and mood ratings to forecast circadian insights. Features an asynchronous ML pipeline using Scikit-learn's <code>HistGradientBoostingRegressor</code> with sub-100 ms responses and a React/TypeScript analytics dashboard.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/singhalujjwal9528" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="MindTwin AI GitHub Repository">GitHub &rarr;</a>
+                <a href="#projects" class="project-link secondary" aria-label="MindTwin AI Live Demo">Live Demo</a>
+                <a href="#projects" class="project-link secondary" aria-label="MindTwin AI API Health">API Health</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Receipt Vault -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-image-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=700&q=80" 
+                alt="Receipt Vault interface displaying automated receipt digitization, expense summaries, and warranty tracker" 
+                class="project-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">BullMQ</span>
+                <span class="tag">Redis</span>
+                <span class="tag">Gemini 1.5 Flash Vision</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Prisma</span>
+              </div>
+              <h3 class="project-title">Receipt Vault — Asynchronous Receipt Digitization &amp; Warranty Tracker</h3>
+              <p class="project-description">
+                Event-driven receipt processing system using Redis and BullMQ worker queues to run OCR asynchronously, returning HTTP 202 in under 150 ms. Implemented Server-Sent Events (SSE) for real-time state streaming and Google Gemini 1.5 Flash Vision to extract merchant, total, and warranty details into PostgreSQL and Prisma.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/singhalujjwal9528" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Receipt Vault GitHub Repository">GitHub &rarr;</a>
+                <a href="#projects" class="project-link secondary" aria-label="Receipt Vault Live Demo">Live Demo</a>
+                <a href="#projects" class="project-link secondary" aria-label="Receipt Vault Queue Dashboard">Queue Dashboard</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Responsive Portfolio Platform -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-image-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80" 
+                alt="Interactive developer portfolio website showcasing custom orange and white theme, accessible form, and project filter" 
+                class="project-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3 Variables</span>
+                <span class="tag">JavaScript (ES6+)</span>
+                <span class="tag">Orange &amp; White Theme</span>
+                <span class="tag">GitHub Pages</span>
+              </div>
+              <h3 class="project-title">Interactive &amp; Accessible Developer Portfolio</h3>
+              <p class="project-description">
+                A custom-built portfolio showcasing clean semantics, responsive CSS Grid layouts, and vanilla JavaScript interactivity. Includes a persistent dark/light theme switcher with custom orange accents, interactive category filters, and an accessible contact form with instant validation feedback.
+              </p>
+              <div class="project-links">
+                <a href="#home" class="project-link" aria-label="View Portfolio Live">Live Preview &rarr;</a>
+                <a href="https://github.com/singhalujjwal9528" target="_blank" rel="noopener noreferrer" class="project-link secondary" aria-label="Portfolio Source Code">Source Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements section" id="achievements" aria-label="Achievements and Hackathons">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Achievements &amp; Honors</h2>
+          <p class="section-subtitle">Hackathons and competitions where my solutions made an impact</p>
+        </div>
+
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <span class="achievement-badge">Winner &bull; 1st Place</span>
+            <div class="category-header">
+              <span class="category-icon" aria-hidden="true">🏆</span>
+              <h3 class="category-title">Startup Forge 2.0 Ideathon</h3>
+            </div>
+            <p>
+              Won the ideathon at <strong>Startup Forge 2.0</strong>, organized at <strong>Manipal University Jaipur</strong> on 10 October 2026. Recognized for architectural feasibility, innovative product proposition, and scalable technical implementation.
+            </p>
+          </div>
+
+          <div class="achievement-card">
+            <span class="achievement-badge">Hackathon Qualifier</span>
+            <div class="category-header">
+              <span class="category-icon" aria-hidden="true">🚀</span>
+              <h3 class="category-title">Adobe University Hackathon 2026</h3>
+            </div>
+            <p>
+              Successfully cleared <strong>Round 1 of the Adobe University Hackathon 2026</strong>, solving complex algorithmic challenges and demonstrating software engineering acumen under rigorous time constraints.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact" aria-label="Contact Information and Form">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Have a project idea, hackathon inquiry, or opportunity? Drop me a message!</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3 class="contact-info-title">Let's Connect</h3>
+            <p class="contact-info-desc">
+              I'm always open to discussing new projects, distributed systems, machine learning ideas, or internship opportunities.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">📧</span>
+                <div>
+                  <strong>Email</strong>
+                  <p><a href="mailto:singhalujjwal9528@gmail.com">singhalujjwal9528@gmail.com</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">📞</span>
+                <div>
+                  <strong>Phone</strong>
+                  <p><a href="tel:9528377507">+91 9528377507</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">🎓</span>
+                <div>
+                  <strong>College</strong>
+                  <p>Manipal University Jaipur (B.Tech CSE Core)</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">📍</span>
+                <div>
+                  <strong>Hometown</strong>
+                  <p>Meerut, Uttar Pradesh, India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form with Accessible Labels and Real-time JS Validation -->
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="user-name" class="form-label">Full Name <span class="required">*</span></label>
+              <input 
+                type="text" 
+                id="user-name" 
+                name="name" 
+                class="form-input" 
+                placeholder="Your Name" 
+                required 
+                aria-required="true"
+              >
+              <span class="error-msg" id="name-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="user-email" class="form-label">Email Address <span class="required">*</span></label>
+              <input 
+                type="email" 
+                id="user-email" 
+                name="email" 
+                class="form-input" 
+                placeholder="your.email@example.com" 
+                required 
+                aria-required="true"
+              >
+              <span class="error-msg" id="email-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="user-subject" class="form-label">Subject</label>
+              <input 
+                type="text" 
+                id="user-subject" 
+                name="subject" 
+                class="form-input" 
+                placeholder="Collaboration / Job Opportunity / Project Discussion"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="user-message" class="form-label">Your Message <span class="required">*</span></label>
+              <textarea 
+                id="user-message" 
+                name="message" 
+                rows="5" 
+                class="form-textarea" 
+                placeholder="Write your message here..." 
+                required 
+                aria-required="true"
+              ></textarea>
+              <span class="error-msg" id="message-error" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+              <span>Send Message</span>
+              <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Feedback Toast Message -->
+  <div class="toast" id="toast" role="alert" aria-live="assertive">
+    <span class="toast-icon" aria-hidden="true">✓</span>
+    <span class="toast-text" id="toast-text">Thank you! Your message has been received.</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="logo-bracket">&lt;</span>Ujjwal Singhal<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+        <p class="footer-tagline">B.Tech CSE (Core) &bull; Full-Stack Development &bull; Machine Learning</p>
+      </div>
+      <p class="footer-copy">
+        &copy; <span id="current-year"></span> Handcrafted by Ujjwal Singhal. Built with HTML5, CSS3, &amp; JavaScript.
+      </p>
+      <a href="#header" class="back-to-top" id="back-to-top" aria-label="Back to top of page">
+        &uarr; Top
+      </a>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
